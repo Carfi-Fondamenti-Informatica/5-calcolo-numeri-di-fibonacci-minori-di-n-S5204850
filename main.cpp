@@ -4,11 +4,11 @@ int main() {
     int n;
     std::cin>>n;
 if(n>=2){
-    int a=1; int b=1;  int d=3;
+    int a=1; int b=1; int c; int d=3;
     std::cout<<"1"<<std::endl;
     std::cout<<"1"<<std::endl;
-    while (n>=d) {
-       int c = a + b;
+    while (n>=d && (a+b)<n) {
+        c = a + b;
         std::cout << c << std::endl;
         b = a;
         a = c;
@@ -23,4 +23,3 @@ else
     return 0;
 
 }
-
