@@ -12,6 +12,7 @@ if(n>=2){
         std::cout << c << std::endl;
         b = a;
         a = c;
+
     }
 
 }
