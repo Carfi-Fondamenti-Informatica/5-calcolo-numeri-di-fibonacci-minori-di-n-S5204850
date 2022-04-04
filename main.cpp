@@ -1,24 +1,26 @@
 #include <iostream>
 
 int main() {
-    int n;
+    int n; int a; int b=1; int c=1; int d=3;
     std::cin>>n;
-if(n>=2){
-    int a=1; int b=1; int c; int d=3;
     std::cout<<"1"<<std::endl;
     std::cout<<"1"<<std::endl;
-    while (n>=d && (a+b)<=n) {
-        c = a + b;
-        std::cout << c << std::endl;
-        b = a;
-        a = c;
-        d=d+1;
+    while (n>=d){
+        a=b+c;
+        c=b;
+        b=a;
+      d=d+1;
+std::cout<<a<<std::endl;
+if (n<(b+c)){
+    break;
+}
 
     }
 
-}
-else
-    std::cout<<"errore"<<std::endl;
+
+
+
+
 
     return 0;
 
